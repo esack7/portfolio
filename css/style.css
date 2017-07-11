@@ -1,0 +1,14 @@
+body {
+  margin: 3px;
+  border: 1px solid black;
+}
+
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+
+}
+
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+}
