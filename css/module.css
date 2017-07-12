@@ -1,0 +1,13 @@
+.icon-menu {
+  display: inline;
+  /*position: absolute;*/
+  left: 0;
+  font-size: 2em;
+  margin: 5px;
+}
+
+nav ul {
+  display: none;
+  padding: 5px;
+  clear: both;
+}
