@@ -25,15 +25,21 @@
     </header>
     <main>
       <section>
-        <img src="http://placehold.it/500x500/000000">
+        <a href="#"><img src="http://placehold.it/500x500/000000"></a>
       </section>
-      <section>
-        <h2>Projects</h2>
-        <ul>
-          <li><a href="#"><img src="http://placehold.it/300x300/000000"></a></li>
-          <li><a href="#"><img src="http://placehold.it/300x300/000000"></a></li>
-          <li><a href="#"><img src="http://placehold.it/300x300/000000"></a></li>
-        </ul>
+      <section id="projects"><h2>Projects</h2>
+      <article class="template" data-category="cat">
+        <header>
+          <a href="#"><h3>Project</h3>
+          <img id="projectImage" src="http://placehold.it/300x300/000000"></a>
+        </header>
+        <section class="project-body">
+          <p id="gitHubLink">GitHub: <a href="#"></a></p>
+          <p id="collabs">Collaborators: </p>
+          <p id="description">Description: </p>
+          <p id="tools">Tools used: </p>
+        </section>
+      </article>
       </section>
       <section>
         <h2>About Me</h2>
@@ -51,8 +57,8 @@
       <p>&copy; Isaac Heist 2017</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/myProjects"></script>
-    <script src="js/project"></script>
+    <script  type="text/javascript" src="js/myProjects.js"></script>
+    <script  type="text/javascript" src="js/project.js"></script>
   </body>
 </html>
 <!-- something -->
