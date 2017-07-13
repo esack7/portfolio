@@ -25,3 +25,4 @@ Project.prototype.toHtml = function() {
 projectData.forEach(function(projectObject) {
   projects.push(new Project(projectObject));
 });
+//still working on day 2
