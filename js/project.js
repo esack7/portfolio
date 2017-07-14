@@ -25,4 +25,6 @@ Project.prototype.toHtml = function() {
 projectData.forEach(function(projectObject) {
   projects.push(new Project(projectObject));
 });
-//still working on day 2
+//I understand if this doesn't meet the requirements for not giving my best effort.
+//I honestly don't know how to give it my best effort while I am 3 days behind.
+//still working on day 2, I will be catching up to day 4 and 5 over the weekend.
