@@ -11,20 +11,28 @@ function Project (projectDataObj){
   this.colabs = projectDataObj.colabs;
   this.description = projectDataObj.description;
   this.tools = projectDataObj.tools;
+  this.date = projectDataObj.date;
 }
 
 Project.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
-  $newProject.removeClass('template');
-  $newProject.find('section > h3').html(this.name);
+  $($newProject).removeClass().addClass(this.name.toLowerCase().replace(/\s/g,''));
+  $newProject.find('.title a h3').html(this.name);
+  $newProject.find('.title a').attr('href', this.url);
   $newProject.find('#projectImage').attr('src', this.image);
-  $newProject.find('header > a').attr('href', this.url);
-  $newProject.find('header > a').html(this.gitHubUrl);
+  $newProject.find('#gitHubLink').html(this.gitHubUrl);
+  $newProject.find('.project-body a').attr('href', this.gitHubUrl);
+  $newProject.find('#collabs').html('Collaborators: ' + this.colabs);
+  $newProject.find('#description').html('Description: ' + this.description);
+  $newProject.find('#tools').html('Tools Used: ' + this.tools);
+  $newProject.find('time').html(this.date);
+  return $newProject;
 };
 
 projectData.forEach(function(projectObject) {
   projects.push(new Project(projectObject));
 });
-//I understand if this doesn't meet the requirements for not giving my best effort.
-//I honestly don't know how to give it my best effort while I am 3 days behind.
-//still working on day 2, I will be catching up to day 4 and 5 over the weekend.
+
+projects.forEach(function(project) {
+  $('#projects').append(project.toHtml());
+});

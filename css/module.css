@@ -12,6 +12,18 @@ nav ul {
   clear: both;
 }
 
+
+#front img {
+  display: block;
+  margin: 25px auto;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+#projects {
+  display: none;
+}
+
 @media only screen and (min-width: 640px) {
   .icon-menu {
     display: none;
