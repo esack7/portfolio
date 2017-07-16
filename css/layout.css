@@ -18,3 +18,14 @@ footer li {
   padding-left: 7%;
   padding-top: 15px;
 }
+
+div {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  border: solid 2px black
+}
+
+.template {
+  display: none;
+}

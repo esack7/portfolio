@@ -26,6 +26,8 @@ nav ul {
   }
 }
 
-.template {
-  display: none;
+#front img {
+  display: block;
+  margin: auto;
+  border-radius: 50%
 }
