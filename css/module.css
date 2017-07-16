@@ -25,3 +25,7 @@ nav ul {
     display: inline-block;
   }
 }
+
+.template {
+  display: none;
+}
