@@ -1,3 +1,15 @@
+.main-nav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 25px auto;
+  text-align: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -17,13 +29,6 @@ footer li {
   display: inline-block;
   padding-left: 7%;
   padding-top: 15px;
-}
-
-div {
-  display: inline-block;
-  height: 300px;
-  width: 300px;
-  border: solid 2px black
 }
 
 .template {
