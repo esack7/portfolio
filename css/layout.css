@@ -34,3 +34,7 @@ footer li {
 .template {
   display: none;
 }
+
+#about_me h2 {
+  text-align: center;
+}
