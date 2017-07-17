@@ -11,6 +11,23 @@
   <link rel="stylesheet" href="/css/module.css">
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
   <title>Isaac Heist's Portfolio</title>
+  <script id="projects-template" type="text/x-handlebars-template">
+    <article class="{{names}}">
+    <header class="title">
+      <a href="{{url}}"><h3>{{name}}</h3>
+              <img id="projectImage" src="{{image}}"></a>
+    </header>
+    <section class="project-body">
+      <a href="{{gitHubUrl}}">
+        <p id="gitHubLink">{{gitHubUrl}}</p>
+      </a>
+      <p id="collabs">Collaborators: {{colabs}}</p>
+      <p id="description">Description: {{description}}</p>
+      <p id="tools">Tools Used: {{tools}}</p>
+      <p>published <time pubdate="" datetime="01-01-2000">{{date}}</time></p>
+    </section>
+  </article>
+  </script>
 </head>
 
 <body>
@@ -70,6 +87,7 @@
     <p>&copy; Isaac Heist 2017</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
   <script type="text/javascript" src="js/appView.js"></script>
   <script type="text/javascript" src="js/myProjects.js"></script>
   <script type="text/javascript" src="js/project.js"></script>

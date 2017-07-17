@@ -5,6 +5,7 @@ var projects = [];
 //constructor function to instantiate every project in my portfolio
 function Project (projectDataObj){
   this.name = projectDataObj.name;
+  this.id = projectDataObj.name.toLowerCase().replace(/\s/g,'');
   this.image = projectDataObj.image;
   this.url = projectDataObj.url;
   this.gitHubUrl = projectDataObj.gitHubUrl;
@@ -15,18 +16,9 @@ function Project (projectDataObj){
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-  $($newProject).removeClass().addClass(this.name.toLowerCase().replace(/\s/g,''));
-  $newProject.find('.title a h3').html(this.name);
-  $newProject.find('.title a').attr('href', this.url);
-  $newProject.find('#projectImage').attr('src', this.image);
-  $newProject.find('#gitHubLink').html(this.gitHubUrl);
-  $newProject.find('.project-body a').attr('href', this.gitHubUrl);
-  $newProject.find('#collabs').html('Collaborators: ' + this.colabs);
-  $newProject.find('#description').html('Description: ' + this.description);
-  $newProject.find('#tools').html('Tools Used: ' + this.tools);
-  $newProject.find('time').html(this.date);
-  return $newProject;
+  var template = $('#projects-template').html();
+  var templateRender = Handlebars.compile(template);
+  return templateRender(this);
 };
 
 projectData.forEach(function(projectObject) {
