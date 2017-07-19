@@ -1,33 +1,31 @@
-'use strict';
-
-var projectData = [
+[
   {
-    "name":         "'RePong'",
-    "image":        "'img/repong.png'",
-    "url":          "'http://repong.win'",
-    "gitHubUrl":    "'https://github.com/taxpayer131/Code201_finalProject'",
-    "colabs":       "'Austin Cohrs, Kimmer O\'Reilly, Chris Stefan'",
-    "description":  "'A recreation of the classic PONG game to work in your browser to play with friends.  Scores and Leaderboard persist on the local machine'",
-    "tools":        "'HTML, CSS, JavaScript'",
-    "date":         "'06-30-2017'"
+    "name":         "RePong",
+    "image":        "img/repong.png",
+    "url":          "http://repong.win",
+    "gitHubUrl":    "https://github.com/taxpayer131/Code201_finalProject",
+    "colabs":       "Austin Cohrs, Kimmer O'Reilly, Chris Stefan",
+    "description":  "A recreation of the classic PONG game to work in your browser to play with friends.  Scores and Leaderboard persist on the local machine",
+    "tools":        "HTML, CSS, JavaScript",
+    "date":         "06-30-2017"
   },
   {
-    "name":         "'ChordProSheet'",
-    "image":        "'img/chordsheet.png'",
-    "url":          "'#'",
-    "gitHubUrl":    "'https://github.com/esack7'",
-    "colabs":       "'Johnny Cash, Bruce Coburn, Carlos Santana'",
-    "description":  "'A web app that creates, stores, and manages music in the ChordPro format.  Also has the ability generate PDF files of one or more songs in various page sizes.  Has the ability to customize styling, columns, and margins.'",
-    "tools":        "'HTML, CSS, jQuery, handlebars.js'",
-    "date":         "'01-29-2017'"
+    "name":         "ChordProSheet",
+    "image":        "img/chordsheet.png",
+    "url":          "#",
+    "gitHubUrl":    "https://github.com/esack7",
+    "colabs":       "Johnny Cash, Bruce Coburn, Carlos Santana",
+    "description":  "A web app that creates, stores, and manages music in the ChordPro format.  Also has the ability generate PDF files of one or more songs in various page sizes.  Has the ability to customize styling, columns, and margins.",
+    "tools":        "HTML, CSS, jQuery, handlebars.js",
+    "date":         "01-29-2017"
   },
   {
-    "name":         "'Bat Game'",
-    "image":        "'img/fruitbat.jpg'",
-    "url":          "'#'",
-    "gitHubUrl":    "'https://github.com/esack7'",
-    "colabs":       "'John Timothy, Asher, Isaiah'",
-    "tools":        "'HTML, CSS, jQuery'",
-    "date":         "'12-03-2016'"
+    "name":         "Bat Game",
+    "image":        "img/fruitbat.jpg",
+    "url":          "#",
+    "gitHubUrl":    "https://github.com/esack7",
+    "colabs":       "John Timothy, Asher, Isaiah",
+    "tools":        "HTML, CSS, jQuery",
+    "date":         "12-03-2016"
   }
 ]
