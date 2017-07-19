@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/icon.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/module.css">
+  <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+  <title>Isaac Heist's Portfolio</title>
+  <script id="projects-template" type="text/x-handlebars-template">
+    <article class="{{names}}">
+    <header class="title">
+      <a href="{{url}}"><h3>{{name}}</h3>
+              <img id="projectImage" src="{{image}}"></a>
+    </header>
+    <section class="project-body">
+      <a href="{{gitHubUrl}}">
+        <p id="gitHubLink">{{gitHubUrl}}</p>
+      </a>
+      <p id="collabs">Collaborators: {{colabs}}</p>
+      <p id="description">Description: {{description}}</p>
+      <p id="tools">Tools Used: {{tools}}</p>
+      <p>published <time pubdate="" datetime="01-01-2000">{{date}}</time></p>
+    </section>
+  </article>
+  </script>
+</head>
+
+<body>
+  <header>
+    <i class="icon-menu"></i>
+    <h1>Isaac Heist</h1>
+    <nav class="main-nav">
+      <ul>
+        <li class="tab"><h2>Projects</h2></li>
+        <li class="tab"><h2>About Me</h2></li>
+        <li class="tab"><h2>Social Links</h2></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="front">
+      <img src="img/headshot.jpg">
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>
+        <article class="template">
+          <header class="title">
+            <a href="#"><h3>Project</h3>
+              <img id="projectImage" src="http://placehold.it/300x300/000000"></a>
+          </header>
+          <section class="project-body">
+            <a href="#">
+              <p id="gitHubLink">GitHub</p>
+            </a>
+            <p id="collabs">Collaborators: </p>
+            <p id="description">Description: </p>
+            <p id="tools">Tools used: </p>
+            <p>published <time pubdate datetime="01-01-2000">Publish Time</time></p>
+          </section>
+        </article>
+      </div>
+    </section>
+    <section id="about_me">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum volutpat scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla in eros id nunc varius varius eget quis nisi. Phasellus viverra
+        purus et sollicitudin commodo. Duis eget justo metus. Suspendisse interdum lacinia venenatis. Sed ultrices neque sed posuere ornare. In iaculis mi vel arcu tempor, vitae aliquet nisl rutrum. Phasellus consequat nulla nulla, a efficitur erat varius
+        a. Vivamus pulvinar, mi in egestas efficitur, nunc lorem dapibus velit, quis tristique dui enim eu purus. Donec vel libero tincidunt, rutrum tellus in, blandit augue. Sed lacinia auctor mi, nec tempus nisl elementum a.</p>
+
+      <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sodales, magna efficitur vestibulum placerat, nisl dolor volutpat lectus, vitae elementum elit erat dapibus arcu. Praesent dictum rhoncus sollicitudin.
+        Donec cursus, magna eget eleifend malesuada, metus risus viverra libero, et blandit nibh justo vitae velit. Fusce vestibulum placerat justo, eget porta quam consequat eu. Curabitur et metus sapien. Sed gravida blandit nunc, in tincidunt quam hendrerit
+        eget. Ut fringilla feugiat velit, id scelerisque mi fermentum sed. Praesent id lectus molestie, tincidunt massa at, dapibus neque. Cras laoreet justo quis rhoncus molestie. Duis fermentum tortor quis lacinia convallis. Phasellus egestas, lacus
+        et pulvinar blandit, sapien dui posuere sapien, quis rutrum eros libero eu turpis.</p>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#github"><img src=""></a>github</li>
+      <li><a href="#linkin"><img src=""></a>linkedin</li>
+      <li><a href="#facebook"><img src=""></a>facebook</li>
+    </ul>
+    <p>&copy; Isaac Heist 2017</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+  <script type="text/javascript" src="js/appView.js"></script>
+  <script type="text/javascript" src="js/project.js"></script>
+  <script>Project.fetchAll();</script>
+</body>
+
+</html>
