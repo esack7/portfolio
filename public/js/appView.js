@@ -1,10 +1,13 @@
 'use strict';
 
-$(document).ready(function() {
-  $('.icon-menu').click(function() {
-    $('nav ul').css('display','block');
+$(function() {
+  $('.icon-menu').on('click',function(e){
+    e.preventDefault();
+    $('nav ul').slideToggle();
   });
+  $('nav ul').css('display', 'block');
 });
+
 
 $('.main-nav ul li:first').click(function() {
   $('#projects').css('display', 'inline-block');
