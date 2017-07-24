@@ -12,7 +12,7 @@ function Project (projectDataObj){
   this.tools = projectDataObj.tools;
   this.date = projectDataObj.date;
 }
-
+//PRAISE THE SUN!!!
 Project.all = [];
 
 //toHtml is the functionality to utilize handlebars.js
