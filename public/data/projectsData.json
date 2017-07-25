@@ -25,6 +25,7 @@
     "url":          "#",
     "gitHubUrl":    "https://github.com/esack7",
     "colabs":       "John Timothy, Asher, Isaiah",
+    "description":  "A web app recreation of an educational board game my son made about fruit bats",
     "tools":        "HTML, CSS, jQuery",
     "date":         "12-03-2016"
   }
