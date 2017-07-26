@@ -1,6 +1,6 @@
 'use strict';
 var app = app || {};
-(function(module) {
+(function() {
   $(function() {
     $('.icon-menu').on('click',function(e){
       e.preventDefault();
