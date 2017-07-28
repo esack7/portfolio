@@ -1,16 +1,8 @@
 'use strict';
-
 //constructor function to instantiate every project in my portfolio
-function Project (projectDataObj){
-  this.name = projectDataObj.name;
-  this.id = projectDataObj.name.toLowerCase().replace(/\s/g,'');
-  this.image = projectDataObj.image;
-  this.url = projectDataObj.url;
-  this.gitHubUrl = projectDataObj.gitHubUrl;
-  this.colabs = projectDataObj.colabs;
-  this.description = projectDataObj.description;
-  this.tools = projectDataObj.tools;
-  this.date = projectDataObj.date;
+
+function Project(projectDataObj) {
+  Object.keys(projectDataObj).forEach(key => this[key] = projectDataObj[key]);
 }
 
 Project.all = [];
@@ -29,12 +21,9 @@ Project.initIndexPage = function() {
   });
 }
 
-//loadAll takes rawData retrieved from localStorage and push's 'new Project' to
-//Project.all array.
-Project.loadAll = function(rawData) {
-  rawData.forEach(function(ele) {
-    Project.all.push(new Project(ele));
-  });
+//The refactored loadAll arrow function maps all new Project objects to Project.all array.
+Project.loadAll = rows => {
+  Project.all = rows.map(ele => new Project(ele));
 }
 
 //fetchAll pulls data from projectsData.json, if there is no localStorage and
