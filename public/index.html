@@ -68,21 +68,17 @@
     </section>
     <section id="about_me">
       <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum volutpat scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla in eros id nunc varius varius eget quis nisi. Phasellus viverra
-        purus et sollicitudin commodo. Duis eget justo metus. Suspendisse interdum lacinia venenatis. Sed ultrices neque sed posuere ornare. In iaculis mi vel arcu tempor, vitae aliquet nisl rutrum. Phasellus consequat nulla nulla, a efficitur erat varius
-        a. Vivamus pulvinar, mi in egestas efficitur, nunc lorem dapibus velit, quis tristique dui enim eu purus. Donec vel libero tincidunt, rutrum tellus in, blandit augue. Sed lacinia auctor mi, nec tempus nisl elementum a.</p>
-
-      <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sodales, magna efficitur vestibulum placerat, nisl dolor volutpat lectus, vitae elementum elit erat dapibus arcu. Praesent dictum rhoncus sollicitudin.
-        Donec cursus, magna eget eleifend malesuada, metus risus viverra libero, et blandit nibh justo vitae velit. Fusce vestibulum placerat justo, eget porta quam consequat eu. Curabitur et metus sapien. Sed gravida blandit nunc, in tincidunt quam hendrerit
-        eget. Ut fringilla feugiat velit, id scelerisque mi fermentum sed. Praesent id lectus molestie, tincidunt massa at, dapibus neque. Cras laoreet justo quis rhoncus molestie. Duis fermentum tortor quis lacinia convallis. Phasellus egestas, lacus
-        et pulvinar blandit, sapien dui posuere sapien, quis rutrum eros libero eu turpis.</p>
+      <p>Hello! My name is Isaac Heist. Thanks for visiting my portfolio page. Here's a little bit about me. I am a husband, father, worship pastor, a student at Code Fellows, and a full-stack JavaScript developer. I also once built some pretty sweet kitchen cabinets. I speak Spanish fluently as a second language and really love the country of Mexico. I enjoy playing guitar, spending time with my wife, playing with my four kids and tinkering around with computers.</p>
+      <h3>Random Fun Fact</h3>
+      <p>The size of my family including myself, my wife and kids, my parents and all my siblings and their spouses and kids:</p>
+      <h4 id='family_facts'></h4>
     </section>
   </main>
   <footer>
     <ul>
-      <li><a href="#github"><img src=""></a>github</li>
-      <li><a href="#linkin"><img src=""></a>linkedin</li>
-      <li><a href="#facebook"><img src=""></a>facebook</li>
+      <li><a href="https://github.com/esack7"><img src="">github</a></li>
+      <li><a href="https://www.linkedin.com/in/isaacheist/"><img src="">linkedin</a></li>
+      <li><a href="https://www.facebook.com/isaacheist"><img src="">facebook</a></li>
     </ul>
     <p>&copy; Isaac Heist 2017</p>
   </footer>
@@ -90,8 +86,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
   <script type="text/javascript" src="js/appView.js"></script>
   <script type="text/javascript" src="js/project.js"></script>
-  <script>Project.fetchAll();</script>
+  <script type="text/javascript" src="js/about.js"></script>
+  <script>app.Project.fetchAll();app.initAboutPage()</script>
 </body>
-
 </html>
-<!-- Added githubToken.js, although it won't be uploaded to github since it is on .gitignore -->
