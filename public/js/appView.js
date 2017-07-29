@@ -6,7 +6,6 @@ var app = app || {};
       e.preventDefault();
       $('nav ul').slideToggle();
     });
-    // $('nav ul').css('display', 'none');
     $('nav ul').css('@media only screen and (max-width: 640px) {nav ul{display: block;}}');
   });
 
