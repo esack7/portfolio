@@ -18,13 +18,13 @@
               <img id="projectImage" src="{{image}}"></a>
     </header>
     <section class="project-body">
-      <a href="{{gitHubUrl}}">
-        <p id="gitHubLink">{{gitHubUrl}}</p>
+      <a href="{{html_url}}">
+        <p id="gitHubLink">{{html_url}}</p>
       </a>
       <p id="collabs">Collaborators: {{colabs}}</p>
       <p id="description">Description: {{description}}</p>
-      <p id="tools">Tools Used: {{tools}}</p>
-      <p>published <time pubdate="" datetime="01-01-2000">{{date}}</time></p>
+      <p id="tools">Tools Used: {{language}}</p>
+      <p>published <time datetime="{{created_at}}">{{created_at}}</time></p>
     </section>
   </article>
   </script>
@@ -85,9 +85,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="/githubToken.js"></script>
   <script src="js/view/appView.js"></script>
   <script src="js/model/project.js"></script>
   <script src="js/model/about.js"></script>
+  <script src="js/model/repo.js"></script>
   <script src="js/controller/aboutController.js"></script>
   <script src="js/controller/projectController.js"></script>
   <script src="js/controller/socialController.js"></script>
