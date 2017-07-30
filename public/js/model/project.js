@@ -35,7 +35,7 @@ var app = app || {};
       Project.loadAll(JSON.parse(localStorage.rawData));
       Project.initIndexPage();
     } else {
-      $.getJSON('data/projectsData.json')
+      $.get('/github/user/repos')
         .then(
           function(data) {
             localStorage.setItem('rawData', JSON.stringify(data));
