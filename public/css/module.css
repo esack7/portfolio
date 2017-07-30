@@ -1,6 +1,5 @@
 .icon-menu {
   display: inline;
-  /*position: absolute;*/
   left: 0;
   font-size: 2em;
   margin: 5px;
@@ -13,7 +12,7 @@ nav ul {
 }
 
 
-#front img {
+#head_shot img {
   display: block;
   margin: 25px auto;
   border-radius: 50%;
@@ -22,6 +21,27 @@ nav ul {
 
 #projects {
   display: none;
+}
+
+#about_me {
+  display: none;
+}
+
+#social {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+#social ul {
+  display: block;
+}
+
+#social ul li {
+  display: inline-block;
+  font-size: 4em;
+  margin: 50px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -35,5 +55,6 @@ nav ul {
 
   nav ul li {
     display: inline-block;
+    margin: 50px;
   }
 }

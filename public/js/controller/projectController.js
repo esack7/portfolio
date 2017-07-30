@@ -4,6 +4,7 @@ var app = app || {};
   const projectController = {};
   projectController.init = function() {
     $('#projects').css('display', 'inline-block');
+    $('#head_shot').css('display', 'none');
     $('#front').css('display', 'none');
     $('#about_me').css('display', 'none');
   }

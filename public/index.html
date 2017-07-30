@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/module.css">
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?rd5re8">
   <title>Isaac Heist's Portfolio</title>
   <script id="projects-template" type="text/x-handlebars-template">
     <article class="{{names}}">
     <header class="title">
-      <a href="{{url}}"><h3>{{name}}</h3>
+      <a href="{{html_url}}"><h3>{{name}}</h3>
               <img id="projectImage" src="{{image}}"></a>
     </header>
     <section class="project-body">
@@ -43,8 +44,12 @@
     </nav>
   </header>
   <main>
-    <section id="front">
+    <section id="head_shot">
       <img src="img/headshot.jpg">
+    </section>
+    <section id="front">
+      <h3>Welcome to Isaac Heist's Portfolio Page</h3>
+      <p>This webpage is all about Isaac Heist, that's me, and all the projects I have done.  Feel free to look around or checkout my social links to get to know me better.</p>
     </section>
     <section id="projects">
       <h2>Projects</h2>
@@ -73,13 +78,15 @@
       <p>The size of my family including myself, my wife and kids, my parents and all my siblings and their spouses and kids:</p>
       <h4 id='family_facts'></h4>
     </section>
+    <section id="social">
+      <ul>
+        <li><a href="https://github.com/esack7" target="_blank"><i class="socicon-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/isaacheist/" target="_blank"><i class="socicon-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/isaacheist" target="_blank"><i class="socicon-facebook"></i></a></li>
+      </ul>
+    </section>
   </main>
   <footer>
-    <ul>
-      <li><a href="https://github.com/esack7" target="_blank"><img src="">github</a></li>
-      <li><a href="https://www.linkedin.com/in/isaacheist/" target="_blank"><img src="">linkedin</a></li>
-      <li><a href="https://www.facebook.com/isaacheist" target="_blank"><img src="">facebook</a></li>
-    </ul>
     <p>&copy; Isaac Heist 2017</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -4,8 +4,10 @@ var app = app || {};
   const aboutController = {};
   aboutController.init = function() {
     $('#projects').css('display', 'none');
-    $('#front').css('display', 'block');
+    $('#head_shot').css('display', 'block');
+    $('#front').css('display', 'none');
     $('#about_me').css('display', 'block');
+    $('#social').css('display', 'none');
   }
   module.aboutController = aboutController;
 })(app);
