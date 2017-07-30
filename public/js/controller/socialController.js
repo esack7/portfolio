@@ -4,8 +4,10 @@ var app = app || {};
   const socialController = {};
   socialController.init = function() {
     $('#projects').css('display', 'none');
-    $('#front').css('display', 'block');
+    $('#head_shot').css('display', 'block');
+    $('#front').css('display', 'none');
     $('#about_me').css('display', 'none');
+    $('#social').css('display', 'block');
   }
   module.socialController = socialController;
 })(app);
