@@ -33,12 +33,12 @@
 <body>
   <header>
     <i class="icon-menu"></i>
-    <h1>Isaac Heist</h1>
+    <a href="/"><h1>Isaac Heist</h1></a>
     <nav class="main-nav">
       <ul>
-        <li class="tab"><h2>Projects</h2></li>
-        <li class="tab"><h2>About Me</h2></li>
-        <li class="tab"><h2>Social Links</h2></li>
+        <li class="tab"><a href="/project"><h2>Projects</h2></a></li>
+        <li class="tab"><a href="/about"><h2>About Me</h2></a></li>
+        <li class="tab"><a href="/social"><h2>Social Links</h2></a></li>
       </ul>
     </nav>
   </header>
@@ -76,17 +76,23 @@
   </main>
   <footer>
     <ul>
-      <li><a href="https://github.com/esack7"><img src="">github</a></li>
-      <li><a href="https://www.linkedin.com/in/isaacheist/"><img src="">linkedin</a></li>
-      <li><a href="https://www.facebook.com/isaacheist"><img src="">facebook</a></li>
+      <li><a href="https://github.com/esack7" target="_blank"><img src="">github</a></li>
+      <li><a href="https://www.linkedin.com/in/isaacheist/" target="_blank"><img src="">linkedin</a></li>
+      <li><a href="https://www.facebook.com/isaacheist" target="_blank"><img src="">facebook</a></li>
     </ul>
     <p>&copy; Isaac Heist 2017</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-  <script type="text/javascript" src="js/appView.js"></script>
-  <script type="text/javascript" src="js/project.js"></script>
-  <script type="text/javascript" src="js/about.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="js/view/appView.js"></script>
+  <script src="js/model/project.js"></script>
+  <script src="js/model/about.js"></script>
+  <script src="js/controller/aboutController.js"></script>
+  <script src="js/controller/projectController.js"></script>
+  <script src="js/controller/socialController.js"></script>
+  <script src="js/controller/routes.js"></script>
+
   <script>app.Project.fetchAll();app.initAboutPage()</script>
 </body>
 </html>

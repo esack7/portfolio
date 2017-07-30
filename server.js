@@ -5,7 +5,7 @@ let app = express();
 //   require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 3000;
 app.use(express.static('./public'));
-app.get('*', function(request, response) {response.sendFile('index.html', {root:'.'});
+app.get('/', function(request, response) {response.sendFile('index.html', {root:'./public'});
 });
 // app.post('/projects', bodyParser, function(request,response) {console.log(request.body);
 //   response.send('Record posted to server!!');
